@@ -1,0 +1,51 @@
+.todoForm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 10px 0px;
+}
+
+.todoForm__form {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.todoForm__form_control {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-15{
+    width: 15%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-10{
+    width: 10%;
+}
+
+.todoForm__form_control > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.todoForm__form_control > button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
