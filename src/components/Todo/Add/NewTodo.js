@@ -1,5 +1,6 @@
 import '../../../assets/css/AddTodo.css'
 import TodoForm from './TodoForm'
+import Card from '../../UI/Card'
 
 const NewTodo = (props) => {
     const formData = (inputData) => {
@@ -11,10 +12,10 @@ const NewTodo = (props) => {
     } 
 
     return (
-        <div className='todo'>
+        <Card className='todo'>
             <h2>Add Todo</h2>
             <TodoForm data={formData}/>
-        </div>
+        </Card>
     )
 }
 
