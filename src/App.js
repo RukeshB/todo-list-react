@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import NewTodo from "./components/Todo/Add/NewTodo";
-import Todo from "./components/Todo/list/Todo";
+import TodoList from "./components/Todo/list/TodoList";
 
 function App() {
   const [todoList, setTodoList] = useState([]);
@@ -15,16 +15,7 @@ function App() {
   return (
     <div className="app">
       <NewTodo newData={todo} />
-      {todoList.map((data) => {
-        return (
-          <Todo
-            key={data.id}
-            date={data.date.toLocaleDateString()}
-            title={data.title}
-            time={data.time}
-          />
-        );
-      })}
+      <TodoList todoList={todoList}/>
     </div>
   );
 }
