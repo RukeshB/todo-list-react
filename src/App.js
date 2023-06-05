@@ -12,10 +12,19 @@ function App() {
     });
   };
 
+  const removeTodo = (todoId) => {
+    setTodoList((prevState) => {
+      const filteredTodo = prevState.filter( (todo) => {
+        return todo.id !== todoId
+      });
+      return filteredTodo;
+    });
+  }
+
   return (
     <div className="app">
       <NewTodo newData={todo} />
-      <TodoList todoList={todoList}/>
+      <TodoList todoList={todoList} onDelete={removeTodo}/>
     </div>
   );
 }
