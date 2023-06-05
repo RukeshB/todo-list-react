@@ -21,7 +21,7 @@ const NewTodo = (props) => {
     setIsAddTodo(true);
   }
 
-  let output = <button onClick={showFromHandler}> Add Todo</button>;
+  let output = <div className="add_todo"><button onClick={showFromHandler} className='new_todo__button'> Add Todo</button></div>
 
   if (isAddTodo) {
     output = (
