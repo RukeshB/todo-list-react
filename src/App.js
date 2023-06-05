@@ -1,10 +1,17 @@
+import { useState } from 'react';
 import './App.css'
-import AddTodo from './components/Todo/AddTodo';
+import NewTodo from './components/Todo/Add/NewTodo';
 
 function App() {
+  const [todoList, setTodoList] = useState({})
+
+  const todo = (newTodo) => {
+    setTodoList(newTodo);
+  }
+
   return (
     <div className='app'>
-      <AddTodo/>
+      <NewTodo newData={todo}/>
     </div>
   );
 }
