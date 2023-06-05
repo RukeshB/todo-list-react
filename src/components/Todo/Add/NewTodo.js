@@ -1,4 +1,4 @@
-import '../../../assets/css/AddTodo.css'
+import '../../../assets/css/NewTodo.css'
 import TodoForm from './TodoForm'
 import Card from '../../UI/Card'
 
@@ -12,7 +12,7 @@ const NewTodo = (props) => {
     } 
 
     return (
-        <Card className='todo'>
+        <Card className='new_todo'>
             <h2>Add Todo</h2>
             <TodoForm data={formData}/>
         </Card>

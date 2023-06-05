@@ -1,0 +1,40 @@
+.todo {
+  padding: 10px 20px;
+}
+
+.todo__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo__close{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.todo__close > button:hover {
+  color: red;
+  background-color: transparent;
+  border: 0;
+}
+
+.todo__close > button {
+  background-color: transparent;
+  border: 0;
+}
+
+.todo__main_content{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.todo__main_content_date_time{
+  width: 10%
+}
+
+.todo__main_content_title {
+  width: 75%;
+}
