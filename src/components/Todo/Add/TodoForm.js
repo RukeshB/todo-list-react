@@ -37,6 +37,7 @@ const TodoForm = (props) => {
 
     const cancelHandler = (event) => {
         clear_input();
+        props.hide();
     }
 
   return (
