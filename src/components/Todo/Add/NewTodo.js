@@ -3,7 +3,11 @@ import TodoForm from './TodoForm'
 
 const NewTodo = (props) => {
     const formData = (inputData) => {
-        props.newData(inputData);
+        const data = {
+            id: Math.random(),
+            ...inputData
+        }
+        props.newData(data);
     } 
 
     return (

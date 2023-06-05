@@ -29,7 +29,7 @@ const TodoForm = (props) => {
         const inputs = {
             date: new Date(date),
             title: title,
-            time: new Date(time)
+            time: time
         }
         props.data(inputs);
         clear_input();
