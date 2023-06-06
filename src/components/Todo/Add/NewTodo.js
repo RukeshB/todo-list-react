@@ -10,7 +10,7 @@ const NewTodo = (props) => {
       id: Math.random(),
       ...inputData,
     };
-    props.newData(data);
+    props.handleNewData(data);
   };
 
   const hideFromHandler = () => {

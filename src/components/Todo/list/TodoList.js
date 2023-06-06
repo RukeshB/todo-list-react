@@ -26,6 +26,7 @@ const TodoList = (props) => {
 
   return (
     <Card className='todo_list'>
+      <h2> List of Todo</h2>
       {output}
     </Card>
   );

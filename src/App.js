@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="app">
-      <NewTodo newData={todo} />
+      <NewTodo handleNewData={todo} />
       <TodoList todoList={todoList} onDelete={removeTodo}/>
     </div>
   );
