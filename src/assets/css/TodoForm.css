@@ -30,6 +30,19 @@
   box-sizing: border-box;
 }
 
+.todoForm__invalid_message{
+  color: red;
+  font-size: small;
+}
+
+.todoForm__form_control__invalid > input {
+  border: 1px solid red;
+}
+
+.todoForm__form_control__invalid > label {
+  color: red;
+}
+
 .todoForm__form_control_button > button {
     width: 100%;
     padding: 12px 20px;

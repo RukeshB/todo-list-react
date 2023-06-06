@@ -27,7 +27,7 @@ const NewTodo = (props) => {
     output = (
       <Card className="new_todo">
         <h2>Add Todo</h2>
-        <TodoForm data={formData} hide={hideFromHandler}/>
+        <TodoForm handleFormSubmit={formData} hide={hideFromHandler}/>
       </Card>
     );
   }
