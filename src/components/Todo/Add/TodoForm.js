@@ -82,7 +82,7 @@ const TodoForm = (props) => {
       </div>
       <div className="todoForm__form_control_button">
         <button type="submit">Add</button>
-        <button onClick={cancelHandler}>Cancel</button>
+        <button onClick={cancelHandler} className='cancel'>Cancel</button>
       </div>
     </form>
   );

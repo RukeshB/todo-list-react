@@ -50,4 +50,17 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: transparent;
+  }
+
+  .todoForm__form_control_button > button:hover {
+    border: 1px solid #010C1B;
+    color: white;
+    background-color: #010C1B;
+  }
+
+  .todoForm__form_control_button > .cancel:hover {
+    border: 1px solid red;
+    color: white;
+    background-color: red;
   }
