@@ -48,8 +48,19 @@ const TodoForm = (props) => {
 
   return (
     <form className="todoForm__form" onSubmit={submitHandler}>
-      <div className={`todoForm__form_control dateTime ${!isFirstTime && (data.date ? "" : "todoForm__form_control__invalid")}`}>
-        <label htmlFor="date">Date {!isFirstTime && <span className="todoForm__invalid_message">{data.date ? "" : "( Can not be empty) "}</span>} </label>
+      <div
+        className={`todoForm__form_control dateTime ${
+          !isFirstTime && (data.date ? "" : "todoForm__form_control__invalid")
+        }`}
+      >
+        <label htmlFor="date">
+          Date{" "}
+          {!isFirstTime && (
+            <span className="todoForm__invalid_message">
+              {data.date ? "" : "( Can not be empty) "}
+            </span>
+          )}{" "}
+        </label>
 
         <input
           id="date"
@@ -59,8 +70,19 @@ const TodoForm = (props) => {
           onChange={changeHandler}
         />
       </div>
-      <div className={`todoForm__form_control ${!isFirstTime && (data.title ? "" : "todoForm__form_control__invalid")}`}>
-        <label htmlFor="title">Title {!isFirstTime && <span className="todoForm__invalid_message">{data.title ? "" : "( Can not be empty )"}</span>}</label>
+      <div
+        className={`todoForm__form_control ${
+          !isFirstTime && (data.title ? "" : "todoForm__form_control__invalid")
+        }`}
+      >
+        <label htmlFor="title">
+          Title{" "}
+          {!isFirstTime && (
+            <span className="todoForm__invalid_message">
+              {data.title ? "" : "( Can not be empty )"}
+            </span>
+          )}
+        </label>
 
         <input
           id="title"
@@ -69,8 +91,19 @@ const TodoForm = (props) => {
           onChange={changeHandler}
         />
       </div>
-      <div className={`todoForm__form_control dateTime ${!isFirstTime && (data.time ? "" : "todoForm__form_control__invalid")}`}>
-        <label htmlFor="time">Time (in hour) {!isFirstTime && <span className="todoForm__invalid_message">{data.time ? "" : "( Can not be empty )"}</span>}</label>
+      <div
+        className={`todoForm__form_control dateTime ${
+          !isFirstTime && (data.time ? "" : "todoForm__form_control__invalid")
+        }`}
+      >
+        <label htmlFor="time">
+          Time (in hour){" "}
+          {!isFirstTime && (
+            <span className="todoForm__invalid_message">
+              {data.time ? "" : "( Can not be empty )"}
+            </span>
+          )}
+        </label>
 
         <input
           id="time"
@@ -82,7 +115,9 @@ const TodoForm = (props) => {
       </div>
       <div className="todoForm__form_control_button">
         <button type="submit">Add</button>
-        <button onClick={cancelHandler} className='cancel'>Cancel</button>
+        <button onClick={cancelHandler} className="cancel">
+          Cancel
+        </button>
       </div>
     </form>
   );
