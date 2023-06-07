@@ -23,6 +23,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1> My Todo </h1>
       <NewTodo handleNewData={todo} />
       <TodoList todoList={todoList} onDelete={removeTodo}/>
     </div>

@@ -1,3 +1,10 @@
 .app {
-    padding: 3rem;
+    padding: 1rem;
+    background-color: #010C1B;
+    height: 100%;
+}
+
+.app h1 {
+    text-align: center;
+    color: white;
 }
