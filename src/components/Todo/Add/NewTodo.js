@@ -2,6 +2,7 @@ import "../../../assets/css/NewTodo.css";
 import TodoForm from "./TodoForm";
 import Card from "../../UI/Card";
 import { useState } from "react";
+import axios from "axios";
 
 const NewTodo = (props) => {
   const [isAddTodo, setIsAddTodo] = useState(false);
@@ -10,6 +11,9 @@ const NewTodo = (props) => {
       id: Math.random(),
       ...inputData,
     };
+    axios.post("https://sheet.best/api/sheets/b2d4864a-e4e9-4623-90d6-f8a7b8e1fb8e", data).then((response) => {
+        console.log(response);
+      });
     props.handleNewData(data);
   };
 

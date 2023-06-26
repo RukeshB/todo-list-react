@@ -34,6 +34,7 @@ const TodoForm = (props) => {
         title: data.title,
         time: data.time,
       };
+
       props.handleFormSubmit(inputs);
       clear_input();
     } else {
